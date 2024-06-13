@@ -1,0 +1,95 @@
+/* General Styling */
+body {
+    background-color: #ffff;
+    margin: 0;
+    left:0;
+    right:0;
+    top:0;
+    height: 100vh;
+    z-index: -1;
+    line-height: 1.6;
+    padding: 5% 5% ;
+    text-align: center;
+    word-wrap: normal;
+}
+
+h3 {
+    line-height: 2;
+    margin:1;
+}
+
+h1 {
+    font-size: 50px;
+    color: orangered;
+}
+h2 {
+    color: orangered;
+    font-size: 30px;
+}
+h3 {
+    color: orangered;
+    font-size: 20px;
+}
+p { font-size: 20px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: left;
+    padding: 10%;
+    
+}
+
+.logo {
+    width:50%;
+    height: 70%;
+    object-fit: contain;
+
+}
+.nav__list {
+    display: flex;
+    height: 120%;
+    flex-direction: column;
+    align-items: right;
+    margin:0;
+    padding:0;
+}
+
+/* HOme section */
+.introduction {
+
+    position: relative;
+    text-align: center;
+    background-color: #E8E9EB;
+    background-size: cover;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+
+}
+
+.play_game {
+    background-color: #CCCDC6;
+    padding: 10px;
+}
+
+.about_me {
+    background-color: #bbbcb6;
+}
+
+.random {
+    background-color: #acada8;
+}
+
+.end {
+    background-color: #746869;
+}
+
+
+
+
+
+
+
