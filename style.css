@@ -22,20 +22,21 @@ html {
 
 body {
   min-height: 100vh;
-  color: #fff;
+  color: #dfe5df;
   font-size: 0.24rem;
-  font-family: "Philosopher", sans-serif;
+  font-family: "Gill Sans", sans-serif;
+  background-image: url("images/bacground.jpeg");
 }
 body:has(#home:target) a[data-anchor=home]:before {
   opacity: 1;
   visibility: visible;
   translate: 0 0;
 }
-body:has(#random:target) a[data-anchor=random]:before {
+/* body:has(#random:target) a[data-anchor=random]:before {
   opacity: 1;
   visibility: visible;
   translate: 0 0;
-}
+} */
 body:has(#about_me:target) a[data-anchor=about_me]:before {
   opacity: 1;
   visibility: visible;
@@ -55,7 +56,7 @@ nav {
   width: 90%;
   margin: auto;
   padding: 0.1rem 1rem;
-  box-shadow: 0 0 10px #0005;
+  box-shadow: 0 0 10px rgba(154, 129, 129, 0.333);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,7 +73,7 @@ nav a {
   padding: 0.1rem;
   color: inherit;
   text-decoration: none;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0 5px rgba(222, 211, 211, 0.8);
   letter-spacing: 2px;
 }
 nav a:before {
@@ -104,7 +105,7 @@ section {
   height: 100dvh;
   padding: 0.5rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background: no-repeat center/cover;
   overflow: hidden;
@@ -113,33 +114,13 @@ section:target h1 {
   animation: showText 0.5s 0.5s both;
 }
 section h1 {
-  letter-spacing: 0.2rem;
-  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
   text-transform: uppercase;
   mix-blend-mode: soft-light;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(215, 185, 185, 0.687);
 }
 
-#home {
-  /* background-image: url("https://images.unsplash.com/photo-1535515384173-d74166f26820?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTcyNjU5ODh8&ixlib=rb-4.0.3&q=85&w=1920"); */
-  /* photo by David Gavi for Unsplash */
-}
-
-#random {
-  /* background-image: url("https://images.unsplash.com/photo-1565674484371-a90094649d30?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTcyNjYwODJ8&ixlib=rb-4.0.3&q=85&w=1920"); */
-  /* Photo by Valery Sysoev for Unsplash *s/
-}
-
-#about_me {
-  /* background-image: url("https://images.unsplash.com/photo-1516257273908-f54242bd5ade?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTcyNjU1OTh8&ixlib=rb-4.0.3&q=85&w=1920"); */
-  /* Photo by Chris Leggat for Unsplash */
-}
-
-#game {
-  /* background-image: url("https://images.unsplash.com/photo-1516257273908-f54242bd5ade?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTcyNjU1OTh8&ixlib=rb-4.0.3&q=85&w=1920"); */
-  /* Photo by Chris Leggat for Unsplash */
-}
-~
 @keyframes showText {
   from {
     opacity: 0;
