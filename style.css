@@ -120,6 +120,30 @@ section h1 {
   mix-blend-mode: soft-light;
   text-shadow: 0 0 10px rgba(215, 185, 185, 0.687);
 }
+section:target about_me
+
+
+#about_me {
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+    align-items: baseline; /* Align content along baselines */
+  }
+  
+  .col {
+    flex: 1; /* Make columns evenly sized */
+    padding: 1rem; /* Add some padding for spacing */
+  }
+  
+  .col p {
+    margin-bottom: 0.5rem; /* Add some margin between paragraphs */
+  }
+  
+  .col a {
+    text-decoration: none; /* Remove underline from link */
+    color: dodgerblue; /* Set link color */
+  }  
+}
 
 @keyframes showText {
   from {
