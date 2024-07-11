@@ -48,3 +48,5 @@ where `<repository-name>` is your GitHub username. Here you're copying the conte
  - Get the code here and play with it if you can
 ## What is this repo?
 It is a community repository for active users.
+
+The portfolio link: https://ominous-square.github.io/first_portfolio/
